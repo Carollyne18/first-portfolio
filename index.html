@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>just vibing ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="main-title">just vibing ✨</h1>
+      <p class="subtitle">a lil space for good vibes only</p>
+      <div class="current-time" id="currentTime"></div>
+    </header>
+
+    <div class="cute-card">
+      <span class="card-emoji">🌸</span>
+      <h2 class="card-title">today's energy</h2>
+      <div class="card-content">
+        <p>soft girl summer vibes with a touch of cottagecore aesthetic. we're feeling dreamy clouds and warm hugs today 💭</p>
+      </div>
+    </div>
+
+    <div class="cute-card">
+      <span class="card-emoji">🧚‍♀️</span>
+      <h2 class="card-title">pick your current mood</h2>
+      <div class="mood-picker">
+        <button class="mood-btn" onclick="setMood('sleepy', this)">sleepy 😴</button>
+        <button class="mood-btn active" onclick="setMood('dreamy', this)">dreamy ☁️</button>
+        <button class="mood-btn" onclick="setMood('cozy', this)">cozy 🕯️</button>
+        <button class="mood-btn" onclick="setMood('giggly', this)">giggly 🦋</button>
+      </div>
+      <div class="vibe-meter">
+        <p>current vibe level:</p>
+        <div class="vibe-bar">
+          <div class="vibe-fill" id="vibeFill" style="width: 75%;"></div>
+        </div>
+        <p id="vibeText">feeling pretty good ngl ✨</p>
+      </div>
+    </div>
+
+    <div class="quote-display" id="quoteDisplay">
+      <div class="quote-text">"you are exactly where you need to be right now"</div>
+      <div class="quote-author">~ gentle reminder 🤍</div>
+    </div>
+
+    <div class="little-grid">
+      <div class="mini-card" onclick="createHearts(event)">
+        <span class="mini-emoji">💖</span>
+        <div class="mini-text">spread love</div>
+      </div>
+      <div class="mini-card" onclick="changeBackground()">
+        <span class="mini-emoji">🎨</span>
+        <div class="mini-text">switch vibes</div>
+      </div>
+      <div class="mini-card" onclick="getCompliment()">
+        <span class="mini-emoji">🌟</span>
+        <div class="mini-text">lil compliment</div>
+      </div>
+      <div class="mini-card" onclick="playSound()">
+        <span class="mini-emoji">🎵</span>
+        <div class="mini-text">soft sounds</div>
+      </div>
+    </div>
+
+    <div class="cute-card">
+      <span class="card-emoji sparkle">✨</span>
+      <h2 class="card-title">manifestation corner</h2>
+      <div class="card-content">
+        <p>manifesting good grades, clear skin, cozy nights, and that perfect golden hour lighting for all your selfies 📸</p>
+        <button class="chill-btn" onclick="manifest()">manifest something cute ✨</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>made with love and way too much pastel 💕</p>
+      <p>remember to stay hydrated bestie 🧚‍♀️</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
